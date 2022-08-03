@@ -4,9 +4,9 @@ import {Component} from '@angular/core';
     selector: 'app-register',
     template: `
         <h1>Register Component</h1>
-        <h3>H3 Tag</h3>
+        <h3>My name is {{ myName }}</h3>
         `,
 })
 export class RegisterComponent {
-
+    myName: string = 'Reza Norouzzadeh'
 }
