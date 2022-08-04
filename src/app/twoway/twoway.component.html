@@ -1,0 +1,10 @@
+<section>
+    <h3>Two Way Binding Component</h3>
+    <label>In this component, I create two way binding.</label>
+    <label>With two way binding, you can combine property and event.</label>
+    <p>
+        <!-- add FormsModule to Imports array in the AppModule-->
+        <input [(ngModel)]="placeholder"/>
+    </p>
+    <button (click)="onChangePlaceholder()">Change placeholder</button>
+</section>

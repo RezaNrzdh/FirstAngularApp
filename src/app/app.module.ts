@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -6,6 +7,7 @@ import { EventBindComponent } from './eventbind/eventbind.component';
 import { FirstComponent } from './first/first.component';
 import { InlineComponent } from './inline/inline.component';
 import { PropertyBindComponent } from './propertybind/propertybind.component';
+import { TwoWayBindingComponent } from './twoway/twoway.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +15,12 @@ import { PropertyBindComponent } from './propertybind/propertybind.component';
     FirstComponent,
     InlineComponent,
     PropertyBindComponent,
-    EventBindComponent
+    EventBindComponent,
+    TwoWayBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
