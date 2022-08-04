@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -10,6 +11,8 @@ import { InlineComponent } from './basic/inline/inline.component';
 import { ngForComponent } from './basic/ngfor/ngfor.component';
 import { PropertyBindComponent } from './basic/propertybind/propertybind.component';
 import { TwoWayBindingComponent } from './basic/twoway/twoway.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,17 @@ import { TwoWayBindingComponent } from './basic/twoway/twoway.component';
     EventBindComponent,
     TwoWayBindingComponent,
     DirectiveComponent,
-    ngForComponent
+    ngForComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
-    FormsModule
+    RouterModule.forRoot([
+      {path: 'about', component: AboutComponent},
+      {path: 'contact', component: ContactComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
