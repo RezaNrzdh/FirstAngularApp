@@ -7,6 +7,7 @@ import { DirectiveComponent } from './directive/directive.component';
 import { EventBindComponent } from './eventbind/eventbind.component';
 import { FirstComponent } from './first/first.component';
 import { InlineComponent } from './inline/inline.component';
+import { ngForComponent } from './ngfor/ngfor.component';
 import { PropertyBindComponent } from './propertybind/propertybind.component';
 import { TwoWayBindingComponent } from './twoway/twoway.component';
 
@@ -18,7 +19,8 @@ import { TwoWayBindingComponent } from './twoway/twoway.component';
     PropertyBindComponent,
     EventBindComponent,
     TwoWayBindingComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    ngForComponent
   ],
   imports: [
     BrowserModule,

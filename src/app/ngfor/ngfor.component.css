@@ -1,0 +1,38 @@
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    box-sizing: border-box;
+    background-color: thistle;
+    border-radius: 16px;   
+    margin-bottom: 24px;
+}
+
+input{
+    height: 36px;
+    border: 1px solid #999999;
+    border-radius: 8px;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: tomato;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: brown;
+    color: white
+}
+
+.list{
+    display: flex;
+    width: 100%;
+}

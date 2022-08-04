@@ -1,0 +1,11 @@
+<section>
+    <h3>ngFor Component</h3>
+    <p>In this component, I used ngFor for create dynamic list</p>
+    <p>
+        <label>Country name</label>
+        <br/>   
+        <input placeholder="Enter Country name..." [(ngModel)]="value"/>
+    </p>
+    <button (click)="onAddHandler()">ADD</button>
+    <div class="list" *ngFor="let list of countryName">{{list}}</div>
+</section>
