@@ -3,13 +3,13 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { DirectiveComponent } from './directive/directive.component';
-import { EventBindComponent } from './eventbind/eventbind.component';
-import { FirstComponent } from './first/first.component';
-import { InlineComponent } from './inline/inline.component';
-import { ngForComponent } from './ngfor/ngfor.component';
-import { PropertyBindComponent } from './propertybind/propertybind.component';
-import { TwoWayBindingComponent } from './twoway/twoway.component';
+import { DirectiveComponent } from './basic/directive/directive.component';
+import { EventBindComponent } from './basic/eventbind/eventbind.component';
+import { FirstComponent } from './basic/first/first.component';
+import { InlineComponent } from './basic/inline/inline.component';
+import { ngForComponent } from './basic/ngfor/ngfor.component';
+import { PropertyBindComponent } from './basic/propertybind/propertybind.component';
+import { TwoWayBindingComponent } from './basic/twoway/twoway.component';
 
 @NgModule({
   declarations: [
