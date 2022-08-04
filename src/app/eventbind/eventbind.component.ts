@@ -6,5 +6,14 @@ import {Component} from '@angular/core';
     styleUrls: ['./eventbind.component.css']
 })
 export class EventBindComponent {
+    input: string = '';
+    result: string = '';
 
+    onGetInput = (event: Event) => {
+        this.input = (<HTMLInputElement>event.target).value;
+    }
+
+    onShowResult = () => {
+          this.result = this.input;
+    }
 }
