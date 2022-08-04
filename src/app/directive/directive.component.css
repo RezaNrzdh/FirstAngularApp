@@ -8,6 +8,13 @@ section {
     margin-bottom: 24px;
 }
 
+.loggedin {
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
 input{
     height: 36px;
     border: 1px solid #999999;

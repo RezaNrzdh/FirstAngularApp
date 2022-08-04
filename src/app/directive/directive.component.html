@@ -1,6 +1,9 @@
 <section>
     <h3>Directive Components</h3>
-    <p>In this component, I used *ngIf for show and hide DOM element.</p>
+    <p>
+        <label>In this component, I used *ngIf for show and hide DOM element.</label>
+        <label>And also, I used ngStyle and ngClass.</label>
+    </p>
     <p>
         <label>Username</label>
         <br />
@@ -8,5 +11,5 @@
     </p>
     <button (click)="onLoginClick()">Login</button>
     <br />
-    <label *ngIf="loggedIn">{{username}} has logged in.</label>
+    <label *ngIf="loggedIn" [ngStyle]="{ 'backgroundColor': 'green' }" [ngClass]="'loggedin'">{{username}} has logged in.</label>
 </section>
