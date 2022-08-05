@@ -13,6 +13,8 @@ import { PropertyBindComponent } from './basic/propertybind/propertybind.compone
 import { TwoWayBindingComponent } from './basic/twoway/twoway.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ProductComponent } from './pages/product/product.component';
+import { CardComponent } from './pages/product/card/card.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,17 @@ import { AboutComponent } from './pages/about/about.component';
     DirectiveComponent,
     ngForComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    ProductComponent,
+    CardComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     RouterModule.forRoot([
       {path: 'about', component: AboutComponent},
-      {path: 'contact', component: ContactComponent}
+      {path: 'contact', component: ContactComponent},
+      {path: 'product', component: ProductComponent}
     ])
   ],
   providers: [],
