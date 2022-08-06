@@ -15,6 +15,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProductComponent } from './pages/product/product.component';
 import { CardComponent } from './pages/product/card/card.component';
+import { ProfileComponent } from './profile/profile.component';
+import { UserComponent } from './profile/user/user.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { CardComponent } from './pages/product/card/card.component';
     ContactComponent,
     AboutComponent,
     ProductComponent,
-    CardComponent
+    CardComponent,
+    ProfileComponent,
+    UserComponent
   ],
   imports: [
     FormsModule,
@@ -37,7 +41,8 @@ import { CardComponent } from './pages/product/card/card.component';
     RouterModule.forRoot([
       {path: 'about', component: AboutComponent},
       {path: 'contact', component: ContactComponent},
-      {path: 'product', component: ProductComponent}
+      {path: 'product', component: ProductComponent},
+      {path: 'profile', component: ProfileComponent}
     ])
   ],
   providers: [],

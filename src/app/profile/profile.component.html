@@ -1,0 +1,11 @@
+<h2>Profile</h2>
+<h4>Member list</h4>
+<div class="row" *ngFor="let u of userlist">
+    &#x3e;&nbsp;&nbsp;
+    <label>{{ u.username }}</label>
+    &nbsp;&nbsp;-&nbsp;&nbsp;
+    <label>{{ u.password }}</label>
+</div>
+<br />
+<hr />
+<app-user (createdUser)="NewUserAdded($event)"></app-user>
