@@ -1,0 +1,11 @@
+header {
+    display: flex;
+    padding: 24px;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: bisque;
+    margin-bottom: 16px;
+}
+h1{
+    font-size: 32px;
+}

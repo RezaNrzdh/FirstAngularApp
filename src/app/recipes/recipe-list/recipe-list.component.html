@@ -1,0 +1,8 @@
+<button>New Recipe</button>
+<br/>
+<a *ngFor="let r of recipes">
+    <h4>{{r.name}}</h4>
+    <p>{{r.description}}</p>
+    <img src={{r.imagePath}} />
+</a>
+<app-recipe-item></app-recipe-item>
