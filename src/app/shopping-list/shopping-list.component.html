@@ -1,2 +1,8 @@
 <app-shopping-edit></app-shopping-edit>
-<label>The List:</label>
+<hr />
+<ul>
+    <a *ngFor="let ingredients of ingredients">
+        {{ ingredients.name }}
+        ({{ ingredients.amount }})
+    </a>
+</ul>

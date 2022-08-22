@@ -1,4 +1,3 @@
-<app-header></app-header>
-<app-recipes></app-recipes>
-<hr />
-<app-shopping-list></app-shopping-list>
+<app-header (showRecipe)="onEventHandler($event)"></app-header>
+<app-recipes *ngIf="switch === 'recipes'"></app-recipes>
+<app-shopping-list *ngIf="switch === 'shopping'"></app-shopping-list>
