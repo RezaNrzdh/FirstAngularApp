@@ -1,3 +1,7 @@
 <button>New Recipe</button>
 <br/>
-<app-recipe-item *ngFor="let i of recipes" [items]="i"></app-recipe-item>
+<app-recipe-item 
+    *ngFor="let i of recipes" [items]="i"
+    (Clicks)="getItemContent(i)"
+>
+</app-recipe-item>

@@ -6,4 +6,8 @@ a{
     border: 1px solid #000000;
     border-radius: 16px;
     margin-right: 16px;
+    cursor: pointer;
+}
+a:hover{
+    background-color: beige;
 }

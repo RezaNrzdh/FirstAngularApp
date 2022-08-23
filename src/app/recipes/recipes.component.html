@@ -1,2 +1,4 @@
-<app-recipe-list></app-recipe-list>
-<app-recipe-detail></app-recipe-detail>
+<app-recipe-list (itemContent)="itemContentDetail = $event"></app-recipe-list>
+<br /><br />
+<app-recipe-detail *ngIf="itemContentDetail; else alternative" [itemContentDetails]="itemContentDetail"></app-recipe-detail>
+<ng-template #alternative>Please select recipe</ng-template>
