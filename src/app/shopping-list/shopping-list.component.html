@@ -1,4 +1,4 @@
-<app-shopping-edit></app-shopping-edit>
+<app-shopping-edit (newIngredientList)="onGetIngredientList($event)"></app-shopping-edit>
 <hr />
 <ul>
     <a *ngFor="let ingredients of ingredients">
